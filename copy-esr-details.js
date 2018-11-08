@@ -6,8 +6,8 @@
 // @author       Tyler Muth - tmuth@splunk.com
 // @match        https://splunk.my.salesforce.com/00O0*
 // @grant        GM_setClipboard
-// @updateURL    https://gist.githubusercontent.com/tmuth/3724b09b71d4621c6adf7e053c3aa04a/raw/985a707e65350305410975b58445080d8647c0a0/sfdc-esr-copy.js
-// @downloadURL  https://gist.githubusercontent.com/tmuth/3724b09b71d4621c6adf7e053c3aa04a/raw/985a707e65350305410975b58445080d8647c0a0/sfdc-esr-copy.js
+// @updateURL    https://raw.githubusercontent.com/tmuth/sfdc-tampermonkey-scripts/master/copy-esr-details.js
+// @downloadURL  https://raw.githubusercontent.com/tmuth/sfdc-tampermonkey-scripts/master/copy-esr-details.js
 // @require http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
