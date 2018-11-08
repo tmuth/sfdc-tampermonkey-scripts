@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy ESR Details to Clipboard
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       Tyler Muth - tmuth@splunk.com
 // @match        https://splunk.my.salesforce.com/00O0*
@@ -35,7 +35,8 @@
         amount = amount.replace('USD ','$');
         var regex = /\.\d\d$/i;
         amount = amount.replace(regex,'');
-
+        
+        // This format can be anything that we want. \n will give newlines. 
         var outText = "ESR ~ " + oppName + " ~ " + amount + " ~ " +esrLink;
         GM_setClipboard (outText);
 
