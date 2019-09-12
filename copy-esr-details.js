@@ -35,8 +35,8 @@
         amount = amount.replace('USD ','$');
         var regex = /\.\d\d$/i;
         amount = amount.replace(regex,'');
-        
-        // This format can be anything that we want. \n will give newlines. 
+
+        // This format can be anything that we want. \n will give newlines.
         var outText = "ESR ~ " + oppName + " ~ " + amount + " ~ " +esrLink;
         GM_setClipboard (outText);
 
@@ -47,6 +47,13 @@
 
         $(".copyESRtoClipboard").click(function(){
            copyEsrTextToClipboard(this);
+           $(this).append('<span class="checkCopy">&#10003;</span>');
+           $(".checkCopy").fadeOut(2000);
         })
+
+        $( ".copyESRtoClipboard" ).css({
+            cursor: "pointer",
+            color: "#9b5a4b"
+        });
     }
 })();
